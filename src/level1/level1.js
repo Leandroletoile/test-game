@@ -5,169 +5,153 @@
 // Pista: "console.log()" NO fucionará.
 // No cambies los nombres de las funciones.
 
-export function devolverString() {
-  // Tu código:
+export function devolverString(str) {
 
-  return;  
+  return str.toString();
 }
 
-export function suma() {
- // Tu código:
+export function suma(x, y) {
 
-  return;  
+  return x + y
 }
 
-export function resta() {
- // Tu código:
-
-  return;
+export function resta(x, y) {
+ 
+  return x- y ;
 }
 
-export function multiplica() {
-  // Tu código:
+export function multiplica(x, y) {
 
-  return;
+  return x * y;
 }
 
-export function divide() { 
-  // Tu código:
+export function divide(x, y) { 
 
-  return;
+  return x / y;
 }
 
-export function sonIguales() {  
-  // Tu código:
+export function sonIguales(x , y) {  
 
-  return;  
+  return x == y ? true :false
 }
 
-export function tienenMismaLongitud() {  
-  // Tu código:
+export function tienenMismaLongitud(str1 , str2) {  
 
-  return;
+  return str1.length === str2.length ? true : false
 }
 
-export function menosQueNoventa() {  
-  // Tu código:
+export function menosQueNoventa(x) {  
 
-  return;
+  return x < 90 ? true : false
 }
 
-export function mayorQueCincuenta() {  
-  // Tu código:
+export function mayorQueCincuenta(x) {  
 
-  return;
+  return x > 50 ? true : false
 }
 
-export function obtenerResto() {  
-  // Tu código:
+export function obtenerResto(x,y) {  
 
-  return;
+  return x % y;
 }
 
-export function esPar() {
-  // Tu código:
+export function esPar(x) {
 
-  return;
+  return (x % 2) == 0 ? true : false
 }
 
-export function esImpar() {  
-  // Tu código:
+export function esImpar(x) {  
 
-  return;
+  return (x % 2) == 0 ? false : true
 }
 
-export function elevarAlCuadrado() {  
-  // Tu código:
+export function elevarAlCuadrado(x) {  
 
-  return;
+  return x * x
 }
 
-export function elevarAlCubo() { 
-  // Tu código:
+export function elevarAlCubo(x) { 
 
-  return;
+  return x ** 3
 }
 
-export function elevar() {  
-  // Tu código:
+export function elevar(x , exp) {  
 
-  return;
+  return Math.pow(x, exp)
 }
 
-export function redondearNumero() {  
-  // Tu código:
+export function redondearNumero(x) {  
 
-  return;
+  return Math.round(x);
 }
 
-export function redondearHaciaArriba() { 
-  // Tu código:
+export function redondearHaciaArriba(x) { 
 
-  return;
+  return Math.ceil(x);
 }
 
-export function numeroRandom() {  
-  // Tu código:
+export function numeroRandom(x) {  
 
-  return;
+  return Math.random(x);
 }
 
-export function esPositivo() {
-  // Tu código:
-  
-  return;
+export function esPositivo(x) {
+
+  if(x == 0){
+    return false
+  }else if (x > 0) {
+  return "Es positivo"
+  }else{
+    return "Es negativo"
+  }
 }
 
-export function agregarSimboloExclamacion() {  
-  // Tu código:
+export function agregarSimboloExclamacion(str) {  
 
-  return;
+  return str + "!"
 }
 
-export function combinarNombres() {
-  // Tu código:
+export function combinarNombres(str1, str2) {
 
-  return;
+  return  str1 +" "+ str2
 }
 
-export function obtenerSaludo() {
-  // Tu código:
+export function obtenerSaludo(x) {
 
-  return;
+  return "Hola "+ x + "!"
 }
 
-export function obtenerAreaRectangulo() {  
-  // Tu código:
+export function obtenerAreaRectangulo(x, y) {  
 
-  return;
+  return x * y
 }
 
 
-export function retornarPerimetro(){
-  // Tu código:
+export function retornarPerimetro(x){
 
-  return;
+  return x * 4
 }
 
 
-export function areaDelTriangulo(){
-  // Tu código:
+export function areaDelTriangulo(x, y){
 
-  return;
+  return (x * y) / 2
 }
 
 
-export function deEuroAdolar(){
-  //Supongamos que 1 euro equivale a 1.20 dólares.
-  // Tu código:
+export function deEuroAdolar(x){
 
-  return;
+  return x+((x*20)/100) 
 }
 
 
-export function esVocal(){
-  // Tu código:
-
-  return;
+export function esVocal(x){
+ 
+  if (x.length > 1){
+    return "Dato incorrecto"
+  }else if ( x != "a" && x != "e" && x != "i" && x != "o" && x != "u" ){
+    return "Dato incorrecto"
+  }else{
+    return "Es vocal"
+  }
 }
