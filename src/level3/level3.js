@@ -101,7 +101,7 @@ export function devolverPrimerElemento(array) {
   
   export function diaDeLaSemana(numeroDeDia) {
 
-    return (numeroDeDia == 1 || numeroDeDia == 7) ? "Es fin de semana" : "Es dia Laboral"   
+    return (numeroDeDia === 1 || numeroDeDia === 7) ? "Es fin de semana" : "Es dia Laboral"   
   } 
   
   
@@ -115,14 +115,14 @@ export function devolverPrimerElemento(array) {
 
     var newArray = arreglo.filter((x, i) => arreglo.indexOf(x) === i)
     
-    return newArray.length == 1 ? true : false
+    return newArray.length === 1 ? true : false
   
   } 
   
   
   export function mesesDelAño(array) {  
 
-    return (array.length == 9) ? ["Marzo", "Noviembre", "Enero"] : "No se encontraron los meses pedidos"
+    return (array.length === 9) ? ["Marzo", "Noviembre", "Enero"] : "No se encontraron los meses pedidos"
 
   }
   
@@ -136,21 +136,22 @@ export function devolverPrimerElemento(array) {
     let suma = []
     for (let i = 0; i < 10; i++) {
 
-      if(numero === i){
-        break
-      }
+      if(numero === i){break}
+
       numero = numero +2
       suma.push(numero)
     }
     return suma.length == 10 ? suma : 'Se interrumpió la ejecución'
  
   }
-  
-  
+   
   export function continueStatement(numero) {
 
     let suma = []   
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 10; i++) {
+
+      if (i === 5) {continue} 
+        
       numero = numero +2
       suma.push(numero)
     }
